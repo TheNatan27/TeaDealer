@@ -5,7 +5,7 @@
   "main": "./src/Frontend/Endpoints/WebController.ts",
   "type": "commonjs",
   "scripts": {
-    "test": "node ./src/Endpoints/WebController.ts",
+    "test": "ts-node ./src/Endpoints/WebController.ts",
     "test2": "nodemon ./src/Endpoints/WebController.ts"
   },
   "keywords": [],
@@ -21,6 +21,7 @@
     "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-promise": "^6.1.1",
     "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
     "typescript": "^4.9.4"
   },
   "dependencies": {

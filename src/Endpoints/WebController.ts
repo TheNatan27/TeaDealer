@@ -1,7 +1,8 @@
 const express = require('express');
-import { response } from 'express';
-import {Dealer} from '../Backend/Dealer';
-import {GameTableLogic} from '../Backend/GameTableLogic';
+const {Dealer} = require('../Backend/Dealer.ts');
+const {GameTableLogic} = require('../Backend/GameTableLogic.ts');
+//import {Dealer} from '../Backend/Dealer';
+//import {GameTableLogic} from '../Backend/GameTableLogic';
 //import testPackModel from '../../Backend/TestPackModel';
 
 
@@ -48,5 +49,5 @@ dealerEndpoint.listen(port2, () => {
 tableEndpoint.post('/table/showdown/:gameId', (request, response) => {
     console.log('Log: result card received, game id: ' + request.params.testId);
     response.send('Result card received');
-    table.receiveCard(request);
+    //table.receiveCard(request);
 })

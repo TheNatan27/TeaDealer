@@ -1,12 +1,11 @@
-import { CardModel } from "./CardModel";
-import { DealController } from "../Endpoints/DealController";
-import { TestPackModel } from "./TestPackModel";
+const { CardModel } = require("./CardModel.ts");
+const { TestPackModel } = require ("./TestPackModel.ts");
 //import List from 'collections';
 
 export class Dealer {
     private jobId: number;
     //private testDeck: List<CardModel>;
-    private testPackModel: TestPackModel; 
+    private testPackModel: typeof TestPackModel; 
     private matchOver: boolean;
 
     constructor(jobID: number) {
